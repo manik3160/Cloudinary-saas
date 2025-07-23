@@ -10,11 +10,8 @@ interface CloudinaryUploadResult {
   duration?: number;
   [key: string]: any;
 }
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+
+
 
 export async function POST(request: NextRequest) {
   const prisma = new PrismaClient();
